@@ -16,10 +16,11 @@ var app = {
 	tomarfoto: function(){
 		var opciones = {
 			quality : 100,
-			destinationType: Camera.DestinationType.FILE_URI,
-			targetWidth: 300,
-			targetHeight: 300,
-			correctOrientation: true
+			cameraDirection: 1,
+            destinationType: Camera.DestinationType.FILE_URI,
+            targetWidth: 300,
+            targetHeight: 300,
+            correctOrientation: true
 		};
 		navigator.camera.getPicture(app.fotoTomada, app.errorAlTomarFoto, opciones);
 		navigator.camera.Direction(1);
